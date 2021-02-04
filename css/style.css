@@ -1,5 +1,9 @@
 body {
-  background: url(/img/main.jpg) no-repeat center fixed;
+  background: url(/img/main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   font-family: "Comfortaa", cursive;
 }
 
@@ -179,13 +183,13 @@ body {
     top: 0;
     background-color: #8888884d;
     width: 250px;
-    transform: translateX(101%);
-    transition: transform .3s;
+    /* transform: translateX(101%); */
+    /* transition: transform .2s; */
   }
 
   .nav.active {
     display: flex;
-    transform: translateX(-1%);
+    /* transform: translateX(-1%); */
   }
 
   .nav-list {
