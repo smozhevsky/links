@@ -10,5 +10,5 @@ menuButton.addEventListener("click", function () {
 });
 
 contactsButton.addEventListener("click", () => {
-  userLinks.style.display = 'flex'
+  userLinks.classList.toggle("active");
 });

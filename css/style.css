@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  width: 95%;
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -88,6 +88,10 @@ body {
   justify-content: center;
 }
 
+.user-links.active {
+  display: flex;
+}
+
 .user-social-logo {
   width: 50px;
 }
@@ -112,14 +116,14 @@ body {
     display: block;
     position: absolute;
     right: 35px;
-    top: 40px;
+    top: 25px;
     width: 30px;
     height: 2px;
     background-color: #fff;
     border: none;
     cursor: pointer;
-    z-index: 2;
   }
+
   .menu-button::before {
     content: "";
     display: block;
@@ -132,6 +136,7 @@ body {
     top: 0;
     transition: transform 0.5s;
   }
+
   .menu-button::after {
     content: "";
     display: block;
@@ -144,30 +149,36 @@ body {
     top: 0;
     transition: transform 0.5s;
   }
+
   .menu-button.active {
     height: 0;
   }
+
   .menu-button.active::before {
     transform: rotate(45deg);
     margin-top: 0;
   }
+
   .menu-button.active::after {
     transform: rotate(-45deg);
     margin-top: 0;
+  }
+
+  .user-card {
+    margin-top: 50px;
   }
 
   .nav {
     display: none;
     position: absolute;
     right: 0;
-    top: 15px;
+    top: 0;
     background-color: #8888884d;
     width: 250px;
-    z-index: 1;
   }
+
   .nav.active {
     display: flex;
-    padding: 10px;
   }
 
   .nav-list {
@@ -176,12 +187,16 @@ body {
   }
 
   .nav-link {
-    margin: 10px 0 10px 0;
+    margin: 15px 0;
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 340px) {
   .user-links {
     flex-direction: column;
+  }
+
+  .header-logo {
+    display: none;
   }
 }
