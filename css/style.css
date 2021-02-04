@@ -112,6 +112,10 @@ body {
 }
 
 @media (max-width: 500px) {
+  .container {
+    width: 95%;
+  }
+
   .menu-button {
     display: block;
     position: absolute;
