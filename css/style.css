@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 95%;
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -98,9 +98,19 @@ body {
 }
 
 .user-links {
-  display: flex;
+  /* display: flex; */
+  display: none;
   flex-direction: column;
   justify-content: center;
+}
+
+.user-links::before {
+  content: "";
+  height: 2px;
+  display: block;
+  background-color: rgba(67, 136, 185, 1);
+  text-align: center;
+  margin-top: 20px;
 }
 
 .user-social-logo {
