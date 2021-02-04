@@ -1,4 +1,5 @@
 body {
+  background: url(/img/main.jpg) no-repeat center fixed;
   font-family: "Comfortaa", cursive;
 }
 
@@ -9,13 +10,8 @@ body {
 }
 
 .header {
-  width: 100%;
-  padding-top: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 .header-inner {
@@ -54,13 +50,7 @@ body {
 }
 
 .intro {
-  background: url(/img/main.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
+  margin-top: 55px;
 }
 
 .intro-inner {
@@ -68,19 +58,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .user-card {
   text-align: center;
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 20px;
   background-color: #ffffffda;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.521);
-  /* font-family: monospace; */
   font-size: 18px;
-  width: 300px;
-  margin-top: 20px;
 }
 
 .user-avatar {
@@ -98,19 +84,8 @@ body {
 }
 
 .user-links {
-  /* display: flex; */
   display: none;
-  flex-direction: column;
   justify-content: center;
-}
-
-.user-links::before {
-  content: "";
-  height: 2px;
-  display: block;
-  background-color: rgba(67, 136, 185, 1);
-  text-align: center;
-  margin-top: 20px;
 }
 
 .user-social-logo {
@@ -188,7 +163,6 @@ body {
     top: 15px;
     background-color: #8888884d;
     width: 250px;
-    /* padding-bottom: 30px; */
     z-index: 1;
   }
   .nav.active {
@@ -203,5 +177,11 @@ body {
 
   .nav-link {
     margin: 10px 0 10px 0;
+  }
+}
+
+@media (max-width: 300px) {
+  .user-links {
+    flex-direction: column;
   }
 }
