@@ -179,10 +179,13 @@ body {
     top: 0;
     background-color: #8888884d;
     width: 250px;
+    transform: translateX(101%);
+    transition: transform .3s;
   }
 
   .nav.active {
     display: flex;
+    transform: translateX(-1%);
   }
 
   .nav-list {
