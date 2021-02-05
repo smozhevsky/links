@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My contacts</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -15,18 +17,36 @@
     <div class="header">
       <div class="container">
         <div class="header-inner">
-          <a class="header-logo" href="#" onclick="window.location.reload()">smg</a>
-          <!--//TODO убрать все логику в js-->
+          <a class="header-logo" href="#" onclick="location.reload()">smg</a>
+          <!--//TODO убрать всю логику в js-->
           <nav class="nav">
             <ul class="nav-list">
               <li class="nav-link">
-                <a class="nav-link-item about" href="#" rel="noopener noreferrer" title="В разработке">About me</a>
+                <a
+                  class="nav-link-item about-btn"
+                  href="#"
+                  rel="noopener noreferrer"
+                  title="В разработке"
+                  >About me</a
+                >
               </li>
               <li class="nav-link">
-                <a class="nav-link-item" href="#" rel="noopener noreferrer" title="В разработке">Portfolio</a>
+                <a
+                  class="nav-link-item"
+                  href="#"
+                  rel="noopener noreferrer"
+                  title="В разработке"
+                  >Portfolio</a
+                >
               </li>
               <li class="nav-link">
-                <a class="nav-link-item contacts" href="#" rel="noopener noreferrer" title="В разработке">Contacts</a>
+                <a
+                  class="nav-link-item contacts"
+                  href="#"
+                  rel="noopener noreferrer"
+                  title="В разработке"
+                  >Contacts</a
+                >
               </li>
             </ul>
           </nav>
@@ -41,24 +61,63 @@
     <div class="intro">
       <div class="container">
         <div class="intro-inner">
-          <div class="user-card">
+          <div class="user card">
             <img class="user-avatar" src="img/avatar.png" alt="avatar" />
             <h1 class="user-title">Ilya Smazhevsky</h1>
             <h2>Looking for a job as junior front-end developer</h2>
-            <div class="user-links">
-              <a class="user-link" href="https://t.me/smozhevsky" target="_blank">
-                <img class="user-social-logo" src="img/tg.png" alt="Telegramm" />Telegram
-              </a>
-              <a class="user-link" href="https://www.linkedin.com/in/smozhevsky/" target="_blank">
-                <img class="user-social-logo" src="img/linkedin.png" alt="linkedin" />LinkedIn
-              </a>
-              <a class="user-link" href="https://github.com/smozhevsky" target="_blank">
-                <img class="user-social-logo" src="img/github.png" alt="github" />GitHub
-              </a>
-            </div>
-            <!--user-links-->
           </div>
           <!--user-card-->
+          <div class="about card">
+            <p>
+              <b>Looking for a job as junior front-end developer</b><br />
+              <b>I have the following knowledge and skills:</b><br />
+              <b>Languages and technologies used, etc.:</b><br />
+              HTML, CSS( CSS), Javascript, jQuery, study React JS, semantic and
+              adaptive layout, cross-browser and valid code<br />
+              <b>Package Manager:</b>npm<br />
+              <b>Assemblers:</b>webpack, gulp<br />
+              <b>Version control systems:</b>Git (GitHub)<br />
+              <b>Tools:</b>VSCode, Photoshop, Figma, Avocode<br />
+              <b>Development principles and methodologies:</b>OOP, BEM<br />
+              <b
+                >Language skills:English-reading/writing with partial use of the
+                translator. Ready to level up</b
+              >
+            </p>
+          </div>
+          <!--about-->
+          <div class="user-links card">
+            <a class="user-link" href="https://t.me/smozhevsky" target="_blank">
+              <img
+                class="user-social-logo"
+                src="img/tg.png"
+                alt="Telegramm"
+              />Telegram
+            </a>
+            <a
+              class="user-link"
+              href="https://www.linkedin.com/in/smozhevsky/"
+              target="_blank"
+            >
+              <img
+                class="user-social-logo"
+                src="img/linkedin.png"
+                alt="linkedin"
+              />LinkedIn
+            </a>
+            <a
+              class="user-link"
+              href="https://github.com/smozhevsky"
+              target="_blank"
+            >
+              <img
+                class="user-social-logo"
+                src="img/github.png"
+                alt="github"
+              />GitHub
+            </a>
+          </div>
+          <!--user-links-->
         </div>
         <!--intro-inner-->
       </div>
@@ -67,5 +126,4 @@
     <!--intro-->
     <script src="app.js"></script>
   </body>
-
 </html>
