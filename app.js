@@ -4,7 +4,7 @@ let aboutButton = document.querySelector(".about-btn");
 let userLinks = document.querySelector(".user-links");
 let contactsButton = document.querySelector(".contacts");
 let headerLogo = document.querySelector("header-logo");
-let aboutMe = document.querySelector(".about")
+let aboutMe = document.querySelector(".about");
 
 menuButton.addEventListener("click", function () {
   menuButton.classList.toggle("active");
