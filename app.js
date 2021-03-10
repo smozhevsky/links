@@ -3,7 +3,7 @@ let nav = document.querySelector(".nav");
 let aboutButton = document.querySelector(".about-btn");
 let userLinks = document.querySelector(".user-links");
 let contactsButton = document.querySelector(".contacts");
-let headerLogo = document.querySelector("header-logo");
+let headerLogo = document.querySelector(".header-logo");
 let aboutMe = document.querySelector(".about");
 
 menuButton.addEventListener("click", function () {
@@ -17,4 +17,8 @@ contactsButton.addEventListener("click", () => {
 
 aboutButton.addEventListener("click", () => {
   aboutMe.classList.toggle("active");
+});
+
+headerLogo.addEventListener("click", () => {
+  location.reload();
 });
