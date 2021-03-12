@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My contacts</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
   </head>
 
   <body>
@@ -20,13 +25,31 @@
           <nav class="nav">
             <ul class="nav-list">
               <li class="nav-link">
-                <a class="nav-link-item about-btn" href="#" rel="noopener noreferrer" title="В разработке">About me</a>
+                <a
+                  class="nav-link-item about-btn"
+                  href="#about"
+                  rel="noopener noreferrer"
+                  title="В разработке"
+                  >About me</a
+                >
               </li>
               <li class="nav-link">
-                <a class="nav-link-item" href="#ex1" rel="modal:open" title="В разработке">Portfolio</a>
+                <a
+                  class="nav-link-item"
+                  href="#ex1"
+                  rel="modal:open"
+                  title="В разработке"
+                  >Portfolio</a
+                >
               </li>
               <li class="nav-link">
-                <a class="nav-link-item contacts" href="#" rel="noopener noreferrer" title="В разработке">Contacts</a>
+                <a
+                  class="nav-link-item contacts"
+                  href="#contacts"
+                  rel="noopener noreferrer"
+                  title="В разработке"
+                  >Contacts</a
+                >
               </li>
             </ul>
           </nav>
@@ -41,13 +64,15 @@
     <div class="intro">
       <div class="container">
         <div class="intro-inner">
-          <div class="user card">
-            <img class="user-avatar" src="img/avatar.png" alt="avatar" />
-            <h1 class="user-title">Ilya Smazhevsky</h1>
-            <h2>Looking for a job as junior front-end developer</h2>
+          <div class="user-main">
+            <div class="user card">
+              <img class="user-avatar" src="img/avatar.png" alt="avatar" />
+              <h1 class="user-title">Ilya Smazhevsky</h1>
+              <h2>Looking for a job as junior front-end developer</h2>
+            </div>
           </div>
           <!--user-card-->
-          <div class="about card">
+          <div class="about card" id="about">
             <p>
               <b>I have the following knowledge and skills:</b><br />
               <b>Programming languages and technologies used, etc.:</b><br />
@@ -58,20 +83,42 @@
               <b>Version control systems:</b>Git (GitHub)<br />
               <b>Tools:</b>VSCode, Photoshop, Figma, Avocode<br />
               <b>Development principles and methodologies:</b>OOP, BEM<br />
-              <b>Language skills:English-reading/writing with partial use of the
-                translator. Ready to level up</b>
+              <b
+                >Language skills:English-reading/writing with partial use of the
+                translator. Ready to level up</b
+              >
             </p>
           </div>
           <!--about-->
-          <div class="user-links card">
+          <div class="user-links card" id="contacts">
             <a class="user-link" href="https://t.me/smozhevsky" target="_blank">
-              <img class="user-social-logo" src="img/tg.png" alt="Telegramm" />Telegram
+              <img
+                class="user-social-logo"
+                src="img/tg.png"
+                alt="Telegramm"
+              />Telegram
             </a>
-            <a class="user-link" href="https://www.linkedin.com/in/smozhevsky/" target="_blank">
-              <img class="user-social-logo" src="img/linkedin.png" alt="linkedin" />LinkedIn
+            <a
+              class="user-link"
+              href="https://www.linkedin.com/in/smozhevsky/"
+              target="_blank"
+            >
+              <img
+                class="user-social-logo"
+                src="img/linkedin.png"
+                alt="linkedin"
+              />LinkedIn
             </a>
-            <a class="user-link" href="https://github.com/smozhevsky" target="_blank">
-              <img class="user-social-logo" src="img/github.png" alt="github" />GitHub
+            <a
+              class="user-link"
+              href="https://github.com/smozhevsky"
+              target="_blank"
+            >
+              <img
+                class="user-social-logo"
+                src="img/github.png"
+                alt="github"
+              />GitHub
             </a>
           </div>
           <!--user-links-->
@@ -88,5 +135,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
   </body>
-
 </html>
